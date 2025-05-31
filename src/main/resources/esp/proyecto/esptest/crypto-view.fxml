@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="contenedor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esp.proyecto.esptest.controllers.CryptoController">
+   <children>
+      <Label fx:id="cryptoLabel" layoutX="249.0" layoutY="72.0" text="CRYPTO VIEW">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="cryptoButton" layoutX="274.0" layoutY="208.0" mnemonicParsing="false" onAction="#mainView" text="MENU" />
+      <Label fx:id="lblBTC" layoutX="145.0" layoutY="139.0" text="BTC" />
+      <Label fx:id="lblSOL" layoutX="393.0" layoutY="148.0" text="SOL" />
+   </children>
+</AnchorPane>
