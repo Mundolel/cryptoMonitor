@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esp.proyecto.esptest.controllers.HelloController">
+   <children>
+      <MenuBar prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Control">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#pinView" text="pin control" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Viewer">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#cryptoView" text="Crypto" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aboutView" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Config Crypto">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#configView" text="Config" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Config email">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#emailView" text="Email" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="titleLabel" layoutY="116.0" prefHeight="18.0" prefWidth="600.0" text="MENÚ PRINCIPAL" />
+     <!--Remember that Label is a class, just as MenuBar, Menu and MenuItem-->
+      <Label fx:id="textLabel" layoutX="-3.0" layoutY="214.0" prefHeight="18.0" prefWidth="600.0" text="TEXTO DE PRUEBA" />
+   </children>
+</AnchorPane>

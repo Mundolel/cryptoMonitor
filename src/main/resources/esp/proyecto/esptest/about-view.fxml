@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="contenedor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esp.proyecto.esptest.controllers.AboutController">
+   <children>
+      <Button layoutX="190.0" layoutY="306.0" mnemonicParsing="false" onAction="#mainView" text="MENU" />
+      <TextFlow layoutX="14.0" layoutY="24.0" prefHeight="272.0" prefWidth="402.0" textAlignment="JUSTIFY">
+         <children>
+            <Text fx:id="aboutTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Esta aplicación de Java funciona con librerías JavaFX y Eclipse Paho, permitiendo comunicación MQTT al broker público de HiveMQ. La aplicación ofrece varias funcionalidades además de la publicación de precios que recibe por la API de la plataforma de cryptomonedas, como, por ejemplo, notificar a un número de WhatsApp el precio actual de una de las monedas monitoreadas (SOL, BTC)." wrappingWidth="402.5333557128906" />
+         </children>
+      </TextFlow>
+   </children>
+</AnchorPane>
