@@ -1,0 +1,173 @@
+/*
+we can style something by id (tergeted)
+or we can style entire classes, remember that
+labels and other stuff are also classes.
+*/
+.label{ /*how do i know the name of the class?*/
+    -fx-alignment:center;
+    -fx-text-fill: "Black";
+    -fx-font-family: "Lucida Console";
+}
+
+#titleLabel{
+    -fx-font-weight: "bold";
+    -fx-font-size: 20;
+    -fx-font-family: "Lucida Console";
+}
+
+#lblBuzzer{
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+}
+
+#pinLabel{
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+.root{
+    -fx-background-color: #106544;
+}
+
+.button {
+    -fx-background-color: #212f3d; /* Negro */
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+    -fx-cursor: hand; /* Cambia el cursor a "mano" */
+}
+
+.button:hover {
+    -fx-background-color: #34495e; /* Gris metálico */
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.1), 5, 0, 0, 1);
+}
+#btnSend{
+    -fx-background-color: #212f3d;
+    -fx-border-color: #00ffff; /* Cian neón */
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, #00ffff, 10, 0.5, 0, 0);
+}
+/*configuration of the toggleButtons*/
+/* ----------- Estilos Base ----------- */
+/* Aplica a todos los ToggleButtons */
+.toggle-button {
+    -fx-min-width: 100px;  /* Ancho mínimo */
+    -fx-pref-width: 100px; /* Ancho preferido */
+    -fx-max-width: 100px;  /* Ancho máximo */
+    -fx-min-height: 30px;  /* Altura mínima */
+    -fx-pref-height: 30px; /* Altura preferida */
+    -fx-max-height: 30px;  /* Altura máxima */
+    -fx-alignment: center; /* Centra el texto */
+}
+
+/* Opcional: ajustar el padding si el texto es muy largo */
+.toggle-button {
+    -fx-padding: 0 10px; /* Padding horizontal */
+}
+.toggle-button {
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+    -fx-transition: all 0.2s; /* Requiere JFoenix para transiciones suaves */
+}
+
+/* ----------- LED Verde ----------- */
+#tgGreen {
+    -fx-background-color: #1a4d1a; /* Verde oscuro (apagado) */
+    -fx-border-color: #2d7d2d;
+}
+
+#tgGreen:selected {
+    -fx-background-color: #00ff00; /* Verde neón (encendido) */
+    -fx-effect: innershadow(gaussian, rgba(0,255,0,0.4), 15, 0, 0, 0);
+    -fx-text-fill: black; /* Mejor contraste */
+}
+
+/* ----------- LED Blanco ----------- */
+#tgWhite {
+    -fx-background-color: #555555; /* Gris (apagado) */
+    -fx-border-color: #888888;
+}
+
+#tgWhite:selected {
+    -fx-background-color: #ffffff; /* Blanco puro (encendido) */
+    -fx-effect: innershadow(gaussian, rgba(255,255,255,0.5), 20, 0, 0, 0);
+    -fx-text-fill: #212f3d; /* Texto negro */
+}
+
+/* ----------- LED Rojo ----------- */
+#tgRed {
+    -fx-background-color: #4d1a1a; /* Rojo oscuro (apagado) */
+    -fx-border-color: #7d2d2d;
+}
+
+#tgRed:selected {
+    -fx-background-color: #ff0000; /* Rojo intenso (encendido) */
+    -fx-effect: innershadow(gaussian, rgba(255,0,0,0.4), 15, 0, 0, 0);
+    -fx-text-fill: white;
+}
+
+/* ---------------------- Slider Oscuro ---------------------- */
+#buzzerSlider .track {
+    -fx-background-color: #2c3e50; /* Azul noche (pista vacía) */
+    -fx-background-radius: 2px;
+    -fx-pref-height: 6px;
+}
+
+#buzzerSlider .filled-track {
+    -fx-background-color: #3498db; /* Azul eléctrico (pista llena) */
+}
+
+#buzzerSlider .thumb {
+    -fx-background-color: #ecf0f1; /* Blanco suave */
+    -fx-border-color: #2c3e50; /* Borde azul noche */
+    -fx-border-width: 2px;
+    -fx-pref-width: 18px;
+    -fx-pref-height: 18px;
+}
+
+/*About view setup*/
+
+#aboutTxt{
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#lblBTC{
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#lblSOL{
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+/* now let's se how to apply style over a whole class:
+CSS styling comes at the format of "property-value-pairs" but since we are working with JavaFX we gotta precede
+all of the CSS properties with "-fx-". Let's have a look on how this would be:
+.root{ investigate what is root and why changing root class changes all panes
+    -fx-background-color:"black";
+    or you can go with hex colors with
+    -fx-background-color: #000000; which is also black but in hex
+}
+
+As you apply settings to the whole class, let's say "Label", all of the labels in your stage will have the same settings,
+but if you apply other setting to a specific label id, it'll have the settings for all the labels and on top,
+the new ones that you define. This also means that you can overwrite the existing settings for that label id.
+
+you can find more information on this video: https://www.youtube.com/watch?v=o-lAsVuskKI
+
+also there's a full tutorial in JavaFX: https://www.youtube.com/watch?v=pf7-zMCQlIc&list=PL9CzlNPNQEQ4YCJkl5_4eTH-f-rvF1xps
+
+in the cuchosky class the info on how to link stages is in 1:01:46
+*/
