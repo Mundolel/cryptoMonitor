@@ -9,10 +9,10 @@ import java.util.concurrent.CompletableFuture;
 
 public class EmailService {
     // Configura estos según tu proveedor SMTP
-    private static final String SMTP_HOST = "smtp.gmail.com";
+    private static final String SMTP_HOST = "smtp.gmail.com"; // can use other SMTP servers
     private static final int    SMTP_PORT = 465;
-    private static final String SMTP_USER = "dickusbiggua@gmail.com";
-    private static final String SMTP_PASS = "ddvw mrnt ecbx pzvl";  // usa App Password si es Gmail
+    private static final String SMTP_USER = "example@gmail.com";
+    private static final String SMTP_PASS = "whatever";  // usa App Password si es Gmail
 
     private final Session session;
 
