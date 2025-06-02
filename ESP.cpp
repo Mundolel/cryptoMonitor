@@ -14,9 +14,9 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 // ——— Configuración Wi-Fi y MQTT ———
-const char* ssid       = "ZTEV50";
-const char* password   = "Jagdtiger8";
-const char* mqttServer = "broker.hivemq.com";
+const char* ssid       = "SSID";
+const char* password   = "EXAMPLE";
+const char* mqttServer = "broker.hivemq.com"; // can use mosquitto or other brokers
 const uint16_t mqttPort= 1883;
 
 // ——— Pines ———
