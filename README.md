@@ -1,5 +1,5 @@
 # cryptoMonitor
-Crypto monitor proyect developed with edge computing of a ESP8266 NodeMCU v1.0
+Crypto monitor project developed with edge computing of a ESP8266 NodeMCU v1.0
 
 This JavaFX application allows users to interact with an ESP8266-based cryptocurrency monitor over MQTT. The app provides a GUI to:
 
